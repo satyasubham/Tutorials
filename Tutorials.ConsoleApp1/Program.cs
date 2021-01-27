@@ -12,8 +12,6 @@ namespace Tutorials.ConsoleApp3
         public float Add(float a, float b)
         {
             return (a + b);
-
-
         }
 
         public double Add(double a, double b)
