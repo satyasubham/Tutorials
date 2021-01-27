@@ -20,10 +20,8 @@ namespace Tutorials.ConsoleApp3
 
         }
 
-
         static void Main(string[] args)
         {
-
 
             Addition aa = new Addition();
 
