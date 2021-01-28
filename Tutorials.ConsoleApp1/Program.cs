@@ -17,7 +17,6 @@ namespace Tutorials.ConsoleApp3
         public double Add(double a, double b)
         {
             return (a + b);
-
         }
 
         static void Main(string[] args)
