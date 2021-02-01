@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tutorials.ClassLibrary1
+namespace Tutorials.Data
 {
     public class Class1
     {
-
-     
     }
 }

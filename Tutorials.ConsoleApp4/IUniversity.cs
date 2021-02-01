@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tutorials.ClassLibrary1
+namespace Tutorials.ConsoleApp4
 {
-    public class Class1
+    public interface IUniversity
     {
-
-     
+        String Name { get; set; }
+       String Address { get; set; }
     }
 }

@@ -1,0 +1,292 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\Tutorials.ConsoleApp1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\Tutorials.ConsoleApp1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6C14A24A-E21E-4211-9086-3871DC02A7BE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tutorials.Web</RootNamespace>
+    <AssemblyName>Tutorials.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\Tutorials.ConsoleApp1\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\Tutorials.ConsoleApp1\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\Tutorials.ConsoleApp1\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\Tutorials.ConsoleApp1\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\Tutorials.ConsoleApp1\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\Tutorials.ConsoleApp1\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\Tutorials.ConsoleApp1\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Tutorials.ConsoleApp1\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\Tutorials.ConsoleApp1\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http">
+      <HintPath>..\Tutorials.ConsoleApp1\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+      <HintPath>..\Tutorials.ConsoleApp1\packages\Microsoft.AspNet.WebApi.WebHost.5.2.7\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\Tutorials.ConsoleApp1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="templates\css\style.css" />
+    <Content Include="templates\dummy\1.jpg" />
+    <Content Include="templates\dummy\figure%402x.jpg" />
+    <Content Include="templates\dummy\figure.jpg" />
+    <Content Include="templates\dummy\gallery-1%402x.jpg" />
+    <Content Include="templates\dummy\gallery-1.jpg" />
+    <Content Include="templates\dummy\gallery-2%402x.jpg" />
+    <Content Include="templates\dummy\gallery-2.jpg" />
+    <Content Include="templates\dummy\gallery-3%402x.jpg" />
+    <Content Include="templates\dummy\gallery-3.jpg" />
+    <Content Include="templates\dummy\gallery-4%402x.jpg" />
+    <Content Include="templates\dummy\gallery-4.jpg" />
+    <Content Include="templates\dummy\gallery-5%402x.jpg" />
+    <Content Include="templates\dummy\gallery-5.jpg" />
+    <Content Include="templates\dummy\gallery-6%402x.jpg" />
+    <Content Include="templates\dummy\gallery-6.jpg" />
+    <Content Include="templates\dummy\gallery-7%402x.jpg" />
+    <Content Include="templates\dummy\gallery-7.jpg" />
+    <Content Include="templates\dummy\gallery-8%402x.jpg" />
+    <Content Include="templates\dummy\gallery-8.jpg" />
+    <Content Include="templates\dummy\gallery-9%402x.jpg" />
+    <Content Include="templates\dummy\gallery-9.jpg" />
+    <Content Include="templates\dummy\large-gallery\gallery-1.jpg" />
+    <Content Include="templates\dummy\large-gallery\gallery-2.jpg" />
+    <Content Include="templates\dummy\large-gallery\gallery-3.jpg" />
+    <Content Include="templates\dummy\large-gallery\gallery-4.jpg" />
+    <Content Include="templates\dummy\large-gallery\gallery-5.jpg" />
+    <Content Include="templates\dummy\large-gallery\gallery-6.jpg" />
+    <Content Include="templates\dummy\large-gallery\gallery-7.jpg" />
+    <Content Include="templates\dummy\large-gallery\gallery-8.jpg" />
+    <Content Include="templates\dummy\large-gallery\gallery-9.jpg" />
+    <Content Include="templates\dummy\person-1%402x.jpg" />
+    <Content Include="templates\dummy\person-1.jpg" />
+    <Content Include="templates\dummy\person-2%402x.jpg" />
+    <Content Include="templates\dummy\person-2.jpg" />
+    <Content Include="templates\dummy\person-3%402x.jpg" />
+    <Content Include="templates\dummy\person-3.jpg" />
+    <Content Include="templates\dummy\person-4%402x.jpg" />
+    <Content Include="templates\dummy\person-4.jpg" />
+    <Content Include="templates\dummy\slide-1%402x.jpg" />
+    <Content Include="templates\dummy\slide-1.jpg" />
+    <Content Include="templates\dummy\slide-2%402x.jpg" />
+    <Content Include="templates\dummy\slide-2.jpg" />
+    <Content Include="templates\dummy\slide-3%402x.jpg" />
+    <Content Include="templates\dummy\slide-3.jpg" />
+    <Content Include="templates\fonts\font-awesome.min.css" />
+    <Content Include="templates\fonts\fontawesome-webfont.svg" />
+    <Content Include="templates\images\icon-brake%402x.png" />
+    <Content Include="templates\images\icon-brake.png" />
+    <Content Include="templates\images\icon-car%402x.png" />
+    <Content Include="templates\images\icon-car.png" />
+    <Content Include="templates\images\icon-contact-email%402x.png" />
+    <Content Include="templates\images\icon-contact-email.png" />
+    <Content Include="templates\images\icon-contact-globe%402x.png" />
+    <Content Include="templates\images\icon-contact-globe.png" />
+    <Content Include="templates\images\icon-contact-name%402x.png" />
+    <Content Include="templates\images\icon-contact-name.png" />
+    <Content Include="templates\images\icon-contact-pencil%402x.png" />
+    <Content Include="templates\images\icon-contact-pencil.png" />
+    <Content Include="templates\images\icon-cpu%402x.png" />
+    <Content Include="templates\images\icon-cpu.png" />
+    <Content Include="templates\images\icon-engine%402x.png" />
+    <Content Include="templates\images\icon-engine.png" />
+    <Content Include="templates\images\icon-envelope-white%402x.png" />
+    <Content Include="templates\images\icon-envelope-white.png" />
+    <Content Include="templates\images\icon-exhaust%402x.png" />
+    <Content Include="templates\images\icon-exhaust.png" />
+    <Content Include="templates\images\icon-gears%402x.png" />
+    <Content Include="templates\images\icon-gears.png" />
+    <Content Include="templates\images\icon-key-white%402x.png" />
+    <Content Include="templates\images\icon-key-white.png" />
+    <Content Include="templates\images\icon-oil%402x.png" />
+    <Content Include="templates\images\icon-oil.png" />
+    <Content Include="templates\images\icon-steering%402x.png" />
+    <Content Include="templates\images\icon-steering.png" />
+    <Content Include="templates\images\icon-suspension%402x.png" />
+    <Content Include="templates\images\icon-suspension.png" />
+    <Content Include="templates\images\icon-wheel-white%402x.png" />
+    <Content Include="templates\images\icon-wheel-white.png" />
+    <Content Include="templates\images\icon-wrench%402x.png" />
+    <Content Include="templates\images\icon-wrench-white%402x.png" />
+    <Content Include="templates\images\icon-wrench-white.png" />
+    <Content Include="templates\images\icon-wrench.png" />
+    <Content Include="templates\images\logo%402x.png" />
+    <Content Include="templates\images\logo.png" />
+    <Content Include="templates\images\map-marker%402x.png" />
+    <Content Include="templates\images\map-marker.png" />
+    <Content Include="templates\js\app.js" />
+    <Content Include="templates\js\ie-support\html5.js" />
+    <Content Include="templates\js\ie-support\pie.htc" />
+    <Content Include="templates\js\ie-support\respond.js" />
+    <Content Include="templates\js\jquery-1.11.1.min.js" />
+    <Content Include="templates\js\min\app-min.js" />
+    <Content Include="templates\js\min\plugins-min.js" />
+    <Content Include="templates\js\plugins.js" />
+    <Content Include="templates\style.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <None Include="packages.config" />
+    <Content Include="Views\_Shared\_LayoutPage1.cshtml" />
+    <Content Include="Views\Default\Index.cshtml" />
+    <Content Include="templates\fonts\fontawesome-webfont.eot" />
+    <Content Include="templates\fonts\fontawesome-webfont.ttf" />
+    <Content Include="templates\fonts\fontawesome-webfont.woff" />
+    <Content Include="templates\fonts\FontAwesome.otf" />
+    <Content Include="templates\js\jquery-1.11.1.min.map" />
+    <Content Include="templates\sass\layout\_content.scss" />
+    <Content Include="templates\sass\layout\_footer.scss" />
+    <Content Include="templates\sass\layout\_header.scss" />
+    <Content Include="templates\sass\layout\_sidebar.scss" />
+    <Content Include="templates\sass\libs\bootstrap-grid\_grid.scss" />
+    <Content Include="templates\sass\libs\bootstrap-grid\_mixins.scss" />
+    <Content Include="templates\sass\libs\bootstrap-grid\_settings.scss" />
+    <Content Include="templates\sass\libs\_components.scss" />
+    <Content Include="templates\sass\libs\_global.scss" />
+    <Content Include="templates\sass\libs\_mixins.scss" />
+    <Content Include="templates\sass\libs\_normalize.scss" />
+    <Content Include="templates\sass\libs\_settings.scss" />
+    <Content Include="templates\sass\pages\_homepage.scss" />
+    <Content Include="templates\sass\style.scss" />
+    <Content Include="templates\style.css.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tutorials.Data\Tutorials.Data.csproj">
+      <Project>{3b8face4-3d10-49f3-9c45-6d104035ffb9}</Project>
+      <Name>Tutorials.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58415</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58406/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\Tutorials.ConsoleApp1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\Tutorials.ConsoleApp1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
